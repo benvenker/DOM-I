@@ -52,7 +52,8 @@ const $ = selector => document.querySelector(selector);
 const navItems = document.querySelectorAll("nav a");
 
 navItems.forEach((navItem, i) => {
-  return (navItem.textContent = siteContent.nav[`nav-item-${i}`]);
+  navItem.textContent = siteContent.nav[`nav-item-${i}`];
+  navItem.style.color = "green";
 });
 
 // CTA
