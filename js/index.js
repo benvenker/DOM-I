@@ -71,9 +71,14 @@ featuresTitle.textContent = siteContent["main-content"]["features-h4"];
 const featuresContent = document.querySelector(".text-content:nth-child(1) p");
 featuresContent.textContent = siteContent["main-content"]["features-content"];
 
+// About Content
 const aboutTitle = document.querySelector(".text-content:nth-child(2) h4");
 console.log(aboutTitle);
 aboutTitle.textContent = siteContent["main-content"]["about-h4"];
 
 const aboutContent = document.querySelector(".text-content:nth-child(2) p");
 aboutContent.textContent = siteContent["main-content"]["about-content"];
+
+// Middle Image
+const middleImg = document.querySelector(".middle-img");
+middleImg.src = siteContent["main-content"]["middle-img-src"];
