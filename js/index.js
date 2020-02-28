@@ -133,3 +133,10 @@ email.textContent = siteContent.contact["email"];
 
 const copyright = $("footer p");
 copyright.textContent = siteContent.footer.copyright;
+
+////// Stretch Goals ///////////
+
+// Update some styles
+$("h1").style.color = "brown";
+$(".contact h4").style.fontSize = "2.4em";
+$("footer p").style.color = "lightgray";
