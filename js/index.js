@@ -62,3 +62,18 @@ button.textContent = siteContent.cta.button;
 
 const ctaImg = document.querySelector("#cta-img");
 ctaImg.src = siteContent.cta["img-src"];
+
+// Features Content
+const featuresTitle = document.querySelector(".text-content:nth-child(1) h4");
+console.log(featuresTitle);
+featuresTitle.textContent = siteContent["main-content"]["features-h4"];
+
+const featuresContent = document.querySelector(".text-content:nth-child(1) p");
+featuresContent.textContent = siteContent["main-content"]["features-content"];
+
+const aboutTitle = document.querySelector(".text-content:nth-child(2) h4");
+console.log(aboutTitle);
+aboutTitle.textContent = siteContent["main-content"]["about-h4"];
+
+const aboutContent = document.querySelector(".text-content:nth-child(2) p");
+aboutContent.textContent = siteContent["main-content"]["about-content"];
