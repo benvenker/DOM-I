@@ -140,3 +140,7 @@ copyright.textContent = siteContent.footer.copyright;
 $("h1").style.color = "brown";
 $(".contact h4").style.fontSize = "2.4em";
 $("footer p").style.color = "lightgray";
+
+$("button").addEventListener("click", event => {
+  $("h1").style.color = "blue";
+});
