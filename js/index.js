@@ -67,7 +67,6 @@ ctaImg.src = siteContent.cta["img-src"];
 
 // Features Content
 const featuresTitle = $(".text-content:nth-child(1) h4");
-console.log(featuresTitle);
 featuresTitle.textContent = siteContent["main-content"]["features-h4"];
 
 const featuresContent = $(".text-content:nth-child(1) p");
@@ -75,7 +74,6 @@ featuresContent.textContent = siteContent["main-content"]["features-content"];
 
 // About Content
 const aboutTitle = $(".text-content:nth-child(2) h4");
-console.log(aboutTitle);
 aboutTitle.textContent = siteContent["main-content"]["about-h4"];
 
 const aboutContent = $(".text-content:nth-child(2) p");
@@ -85,7 +83,7 @@ aboutContent.textContent = siteContent["main-content"]["about-content"];
 const middleImg = $(".middle-img");
 middleImg.src = siteContent["main-content"]["middle-img-src"];
 
-// Bottom Content
+////// Bottom Content
 
 // Services Content
 const servicesH4 = $(".bottom-content :nth-child(1) h4");
@@ -103,7 +101,6 @@ productContent.textContent = siteContent["main-content"]["product-content"];
 
 // Vision content
 const visionH4 = $(".bottom-content").children[2].children[0];
-
 visionH4.textContent = siteContent["main-content"]["vision-h4"];
 
 const visionContent = $(".bottom-content").children[2].children[1];
