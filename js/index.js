@@ -46,6 +46,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
+const $ = selector => document.querySelector(selector);
+
 // Display nav items
 const navItems = document.querySelectorAll("nav a");
 
@@ -54,77 +56,71 @@ navItems.forEach((navItem, i) => {
 });
 
 // CTA
-const h1 = document.querySelector("h1");
+const h1 = $("h1");
 h1.textContent = siteContent.cta.h1;
 
-const button = document.querySelector("button");
+const button = $("button");
 button.textContent = siteContent.cta.button;
 
-const ctaImg = document.querySelector("#cta-img");
+const ctaImg = $("#cta-img");
 ctaImg.src = siteContent.cta["img-src"];
 
 // Features Content
-const featuresTitle = document.querySelector(".text-content:nth-child(1) h4");
+const featuresTitle = $(".text-content:nth-child(1) h4");
 console.log(featuresTitle);
 featuresTitle.textContent = siteContent["main-content"]["features-h4"];
 
-const featuresContent = document.querySelector(".text-content:nth-child(1) p");
+const featuresContent = $(".text-content:nth-child(1) p");
 featuresContent.textContent = siteContent["main-content"]["features-content"];
 
 // About Content
-const aboutTitle = document.querySelector(".text-content:nth-child(2) h4");
+const aboutTitle = $(".text-content:nth-child(2) h4");
 console.log(aboutTitle);
 aboutTitle.textContent = siteContent["main-content"]["about-h4"];
 
-const aboutContent = document.querySelector(".text-content:nth-child(2) p");
+const aboutContent = $(".text-content:nth-child(2) p");
 aboutContent.textContent = siteContent["main-content"]["about-content"];
 
 // Middle Image
-const middleImg = document.querySelector(".middle-img");
+const middleImg = $(".middle-img");
 middleImg.src = siteContent["main-content"]["middle-img-src"];
 
 // Bottom Content
 
 // Services Content
-const servicesH4 = document.querySelector(".bottom-content :nth-child(1) h4");
+const servicesH4 = $(".bottom-content :nth-child(1) h4");
 servicesH4.textContent = siteContent["main-content"]["services-h4"];
 
-const servicesContent = document.querySelector(
-  ".bottom-content :nth-child(1) p"
-);
+const servicesContent = $(".bottom-content :nth-child(1) p");
 servicesContent.textContent = siteContent["main-content"]["services-content"];
 
 // Product Content
-const productH4 = document.querySelector(".bottom-content").children[1]
-  .children[0];
+const productH4 = $(".bottom-content").children[1].children[0];
 productH4.textContent = siteContent["main-content"]["product-h4"];
 
-const productContent = document.querySelector(".bottom-content").children[1]
-  .children[1];
+const productContent = $(".bottom-content").children[1].children[1];
 productContent.textContent = siteContent["main-content"]["product-content"];
 
 // Vision content
-const visionH4 = document.querySelector(".bottom-content").children[2]
-  .children[0];
+const visionH4 = $(".bottom-content").children[2].children[0];
 
 visionH4.textContent = siteContent["main-content"]["vision-h4"];
 
-const visionContent = document.querySelector(".bottom-content").children[2]
-  .children[1];
+const visionContent = $(".bottom-content").children[2].children[1];
 visionContent.textContent = siteContent["main-content"]["vision-content"];
 
 // Contact section
-const contactH4 = document.querySelector(".contact h4");
+const contactH4 = $(".contact h4");
 contactH4.textContent = siteContent.contact["contact-h4"];
 
-const address = document.querySelector(".contact > p");
+const address = $(".contact > p");
 address.textContent = siteContent.contact["address"];
 
-const phone = document.querySelector(".contact :nth-child(3)");
+const phone = $(".contact :nth-child(3)");
 phone.textContent = siteContent.contact["phone"];
 
-const email = document.querySelector(".contact :nth-child(4)");
+const email = $(".contact :nth-child(4)");
 email.textContent = siteContent.contact["email"];
 
-const copyright = document.querySelector("footer p");
+const copyright = $("footer p");
 copyright.textContent = siteContent.footer.copyright;
