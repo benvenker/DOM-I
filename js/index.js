@@ -56,6 +56,17 @@ navItems.forEach((navItem, i) => {
   navItem.style.color = "green";
 });
 
+// Append Nav items
+const blogNav = document.createElement("a");
+blogNav.textContent = "Blog";
+blogNav.style.color = "green";
+$("nav").appendChild(blogNav);
+
+const contactNav = document.createElement("a");
+contactNav.textContent = "Contact";
+contactNav.style.color = "green";
+$("nav :first-child").prepend(contactNav);
+
 // CTA
 const h1 = $("h1");
 h1.textContent = siteContent.cta.h1;
